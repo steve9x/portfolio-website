@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <RouterView />
+  <RouterView class="view" />
 </template>
 
 <script>

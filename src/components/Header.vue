@@ -1,15 +1,20 @@
-<template>
-  <nav class="navbar">
+<template >
+  <div class="primary-header">
     <div class="container flex">
-      <h2 class="logo">Code Factory</h2>
-      <ul>
-        <li v-for="item in navContent" :key="item.label">
-          <!-- <p @click="$router.push(item.route)">{{ item.label }}</p> -->
-          <RouterLink :to="item.route">{{ item.label }}</RouterLink>
-        </li>
-      </ul>
+      <div class="nav-wrapper">
+        <h2 class="fs-primary-heading">Code Factory</h2>
+        <nav class="primary-navigation">
+          <ul class="nav-list" role="list">
+            <li v-for="item in navContent" :key="item.label" class="nav-item">
+              <RouterLink :to="item.route" tag="a">{{ item.label }}</RouterLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
-  </nav>
+  <hr class="thin container">
+  </div>
 </template>
 
 <script>
