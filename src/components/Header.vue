@@ -24,8 +24,8 @@ export default {
   setup () {
     const navContent = ref ([
       { label: 'Home', route: '/' },
-      { label: 'About', route: '/about' },
       { label: 'Projects', route: '/projects' },
+      { label: 'About', route: '/about' },
       { label: 'Contact', route: '/contact' }
     ])
     return {
