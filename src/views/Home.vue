@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wrapper">
+  <div class="home-wrapper full-screen-img">
     <div class="container">
       <div class="home-content">
         <p class="fs-600 fw-regular">Welcome to the</p>

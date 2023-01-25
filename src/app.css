@@ -140,6 +140,24 @@ svg {
   height: 100%;
 }
 
+.full-screen-img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+
+  /* Full height */
+  height: 100vh; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
 .fw-bold {
   font-weight: var(--fw-bold);
 }
@@ -255,26 +273,10 @@ hr.thin {
 }
 
 /* Home */
-.home-wrapper {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
 
-  /* The image used */
+.home-wrapper {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/background.jpg");
-  
-  /* Full height */
-  height: 100vh; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
 }
 
 .home-content {
@@ -353,6 +355,45 @@ hr.thin {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+/* contact */
+
+.contact-wrapper {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/coffee.jpg");
+}
+
+.form-wrapper {
+  background-color: var(--clr-neutral-200);
+  opacity: 0.6;
+  width: 60%;
+  min-width: 330px;
+  max-width: 450px;
+  padding: 40px 30px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  resize: none;
+}
+
+.input-form label {
+  margin-top: var(--size-300);
+  margin-bottom: var(--size-100);
+}
+
+.input-form button {
+  margin-top: var(--size-300);
+  margin-bottom: var(--size-100);
 }
 
 /* button */
